@@ -1,3 +1,6 @@
-body{
-  background-color: gold;
+:root{
+  --color-primary: #019EE0;
+  --color-secondary: #0B4862;
+  --color-glassy: rgba(47, 194, 202, 0.4);
+  --color-lite: #F1F6F6;
 }
