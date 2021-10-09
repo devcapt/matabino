@@ -1,9 +1,19 @@
-:root{
-  --color-primary: #0B4862;
-  --color-secondary: #019EE0;
+
+/* Colors start */
+:root {
+  --color-primary: #0b4862;
+  --color-secondary: #019ee0;
   --color-glassy: rgba(47, 194, 202, 0.4);
-  --color-lite: #F1F6F6;
-  --color-body: #4B5458;
+  --color-lite: #f1f6f6;
+  --color-body: #4b5458;
+}
+/* Colors end */
+
+
+
+/* Typography start */
+html {
+  font-size: 62.5%;
 }
 
 @font-face {
@@ -27,12 +37,41 @@
   src: url(./fonts/vazir/Vazir-Bold.woff2);
 }
 
-
-body{
+body {
   font-family: Vazir;
+  font-size: 2.2rem;
+  line-height: 1.5;
   color: var(--color-body);
+  text-align: right;
 }
 
-h1,h2,h3{
-  color: var(--color-secondary);
+h1,
+h2,
+h3 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
 }
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+@media screen and (min-width:1024px) {
+  body{
+    font-size: 1.8rem;
+  }
+  
+  h1 {
+    font-size: 4.8rem;
+  }
+}
+
+/* Typography end */
