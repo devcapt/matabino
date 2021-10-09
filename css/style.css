@@ -75,3 +75,27 @@ h3 {
 }
 
 /* Typography end */
+
+
+/* Links start */
+
+.link {
+  color: var(--color-primary);
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  filter: opacity(70%);
+}
+
+.link:hover{
+  filter: opacity(100%);
+  transition: filter .2s;
+}
+
+@media screen and (min-width:1024px) {
+  .link{
+    font-size: 1.8rem;
+  }
+}
+
+/* Links end */
