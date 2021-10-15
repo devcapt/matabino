@@ -5,6 +5,10 @@
   --color-glassy: rgba(47, 194, 202, 0.4);
   --color-lite: #f1f6f6;
   --color-body: #4b5458;
+
+  /* font-sizes */
+  --font-small:1.8rem;
+  --font-medium:2.2rem;
 }
 /* Colors end */
 
@@ -112,8 +116,14 @@ h3 {
   text-decoration: none;
   display: inline-block;
   border-radius: 100vh;
-  padding: 5px 15px;
+  padding: .5rem 1.5rem;
   margin: 0;
+  filter: opacity(90%);
+}
+
+.tag:hover{
+  transition: filter .2s;
+  filter: opacity(100%);
 }
 
 .tag::after {
@@ -130,8 +140,45 @@ h3 {
   background-color: var(--color-secondary);
 }
 
-.tag--bigger{
-  padding: 7.5px 15px;
+@media screen and (min-width: 1024px) {
+  .tag{
+    padding: .75rem 1.5rem;
+  }
 }
 
-/* Tags start */
+/* Tags end */
+
+
+/* List start */
+
+.list{
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-body);
+  display: inline-block;
+}
+
+.list--inline .list__item{
+  margin-left: 2rem;
+}
+
+
+/* List end */
+
+/* Icon start */
+
+.icon{
+  /* for instance! */
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary{
+  fill: var(--color-primary);
+}
+
+.icon--secondary{
+  fill: var(--color-secondary);
+}
+
+/* Icon end */
