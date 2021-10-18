@@ -356,7 +356,7 @@ h3 {
   border-radius: 100vh;
 }
 
-.user .user__name{
+.user__name{
   font-size: 1.8rem;
   color: var(--color-primary);
   font-weight: 600;
