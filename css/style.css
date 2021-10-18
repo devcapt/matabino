@@ -323,3 +323,27 @@ h3 {
 }
 /* input-group end */
 
+/* card start */
+
+.card {
+  border-radius: 32px;
+  background-color: salmon;
+  overflow: hidden;
+}
+
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+
+.card__header {
+  background-color: seagreen;
+  height: 40%;
+}
+
+.card__body {
+  height: 60%;
+  background-color: royalblue;
+}
+
+/* card end */
