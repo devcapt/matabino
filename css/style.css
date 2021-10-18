@@ -5,6 +5,10 @@
   --color-glassy: rgba(47, 194, 202, 0.4);
   --color-lite: #f1f6f6;
   --color-body: #4b5458;
+  --color-border: #e5e5e5;
+
+  /* propertie size */
+  --border-radius: 32px;
 
   /* font-sizes */
   --font-small: 1.8rem;
@@ -238,12 +242,12 @@ h3 {
 
 /* button end */
 
-/* input start */
+/* input-group start */
 
 .input {
   font-size: 2.2rem;
   padding: 1.6rem;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--color-border);
   outline: 0;
   direction: rtl;
   border-radius: 32px;
@@ -256,11 +260,66 @@ h3 {
   color: #bfbfbf;
 }
 
-@media screen and (min-width:1024px) {
-  .input{
+.input-group {
+  background-color: white;
+  border: 1px solid var(--color-border);
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-group .input {
+  background-color: transparent;
+  border: 0;
+  flex-grow: 1;
+}
+
+.input-group .search--icon {
+  fill: var(--color-lite);
+}
+
+.input-group .input,
+.btn-search {
+  margin: 0;
+}
+
+.input-group .btn-search {
+  margin: 1rem;
+
+  border-radius: 25px;
+}
+
+.input-group .search {
+  display: none;
+}
+.btn-search .icon {
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
     font-size: 1.8rem;
   }
-}
-/* input end */
 
+  .input-group {
+    height: 7.2rem;
+    border-radius: 25px;
+  }
+
+  .input-group .btn-search {
+    padding: 0 2rem;
+    border-radius: 19px;
+    margin-left: 0.7rem;
+  }
+
+  .btn-search .icon {
+    display: none;
+  }
+
+  .btn-search .search {
+    display: inline-block;
+  }
+}
+/* input-group end */
 
