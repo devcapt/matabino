@@ -347,3 +347,24 @@ h3 {
 }
 
 /* card end */
+
+/* user start */
+
+.user .avatar{
+  float: right;
+  margin-left: 10px;
+  border-radius: 100vh;
+}
+
+.user .user__name{
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.user__name,
+.user__title{
+  margin: 12px 0;
+}
+
+/* user end */
