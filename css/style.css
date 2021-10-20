@@ -327,44 +327,90 @@ h3 {
 
 .card {
   border-radius: 32px;
-  background-color: salmon;
+  background-color: #fff;
   overflow: hidden;
 }
 
 .card__header,
 .card__body {
-  padding: 2rem 3rem;
+  padding: 2rem;
 }
 
-.card__header {
-  background-color: seagreen;
-  height: 40%;
-}
-
-.card__body {
-  height: 60%;
-  background-color: royalblue;
+.card__header{
+  padding-bottom: 0;
 }
 
 /* card end */
 
 /* user start */
 
-.user .avatar{
+.user .avatar {
   float: right;
   margin-left: 10px;
   border-radius: 100vh;
 }
 
-.user__name{
-  font-size: 1.8rem;
+.user__name {
   color: var(--color-primary);
   font-weight: 600;
 }
 
 .user__name,
-.user__title{
+.user__title {
+  font-size: 1.8rem;
   margin: 12px 0;
 }
 
 /* user end */
+
+/* blog-card start */
+
+.blog{
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.blog .image-container {
+  height: 80vw;
+  border-radius: 2.5rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.blog .image-container img {
+  height: 100%;
+}
+
+.blog .blog--title{
+  font-size: 24px;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.blog .user{
+  margin: 0;
+}
+
+.blog .user__name,.user__title{
+  line-height: 1.9;
+  margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .blog {
+    margin: 2rem;
+    width: min-content;
+  }
+  .blog .image-container {
+    height: 26vw;
+    width: 26vw;
+    border-radius: 2.5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+/* blog-card end */
