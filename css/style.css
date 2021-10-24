@@ -359,7 +359,7 @@ h3 {
 .user__name,
 .user__title {
   font-size: 1.8rem;
-  margin: 12px 0;
+  margin: 0;
 }
 
 /* user end */
@@ -451,3 +451,86 @@ h3 {
 }
 
 /* media start */
+
+/* qoute start */
+
+.qoute__text {
+  color: var(--color-body);
+}
+.qoute__text::after{
+  content: '"';
+}
+.qoute__text::before{
+  content: '"';
+}
+
+
+/* qoute end */
+
+/* testimonial start */
+
+.testimonial{
+  direction: rtl;
+  display: flex;
+}
+
+.testimonial .triangle{
+  width: 50rem;
+  height: 50rem;
+}
+
+.pentagon--mask{
+  mask-image: url(../images/pentagon_css_mask.png);
+  -webkit-mask-image: url(../images/pentagon_css_mask.png);
+  
+  -webkit-mask-position: top left;
+  mask-position: top left;
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-size:contain;
+  mask-size:contain;
+  
+  mask-position: center;
+  -webkit-mask-position: center;
+
+  max-height: fit-content;
+  max-width: max-content;
+
+}
+.testimonial .pentagon--container {
+
+  display: flex;
+  justify-content: center;
+  width: 33rem;
+  height: 33rem;
+  position:relative;
+  top: -385px;
+  right: 40px;
+}
+
+.qoute--container{
+  padding: 1.5rem 3rem;
+  border-radius: var(--border-radius);
+  background-color: #fff;
+  height: 300px;
+}
+
+.qoute--container{
+  flex-direction: column;
+  justify-content: space-between;
+
+  display: flex;
+}
+
+.qoute--container .user{
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+
+/* testimonial end */
+
