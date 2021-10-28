@@ -337,7 +337,7 @@ h3 {
   padding: 2rem;
 }
 
-.card__header{
+.card__header {
   padding-bottom: 0;
 }
 
@@ -366,7 +366,7 @@ h3 {
 
 /* blog-card start */
 
-.blog{
+.blog {
   margin: 2rem;
   padding: 1rem;
 }
@@ -383,17 +383,18 @@ h3 {
   height: 100%;
 }
 
-.blog .blog--title{
+.blog .blog--title {
   font-size: 24px;
   color: var(--color-primary);
   font-weight: 600;
 }
 
-.blog .user{
+.blog .user {
   margin: 0;
 }
 
-.blog .user__name,.user__title{
+.blog .user__name,
+.user__title {
   line-height: 1.9;
   margin: 0;
 }
@@ -411,19 +412,17 @@ h3 {
     display: flex;
     justify-content: center;
   }
-
 }
 
 /* blog-card end */
 
-
 /* media start */
 
-.media{
+.media {
   width: 35rem;
 }
 
-.media__image{
+.media__image {
   fill: var(--color-secondary);
   background-color: var(--color-glassy);
   width: 10.5rem;
@@ -434,21 +433,22 @@ h3 {
   border-radius: 5px;
   border: 3px solid #bfe4f3;
 }
-.media .icon{
+.media .icon {
   width: 6rem;
   height: 6rem;
 }
 
-.media .media__title{
+.media .media__title {
   margin: 2rem 0;
   color: var(--color-primary);
   font-size: 2.2rem;
   font-weight: bold;
 }
 
-.media .media__description{
+.media .media__description {
   font-weight: bold;
 }
+
 
 /* media start */
 
@@ -456,81 +456,137 @@ h3 {
 
 .qoute__text {
   color: var(--color-body);
+  font-size: 2.4rem;
 }
-.qoute__text::after{
+.qoute__text::after {
   content: '"';
 }
-.qoute__text::before{
+.qoute__text::before {
   content: '"';
 }
 
+@media screen and (max-width:300px){
+  .qoute__text{
+    font-size: 1.8rem;
+  }
+}
 
 /* qoute end */
 
 /* testimonial start */
 
-.testimonial{
+.testimonial__image {
+  width: 50vw;
+  height: 50vw;
+  margin: auto;
+}
+
+.testimonial {
   direction: rtl;
   display: flex;
 }
 
-.testimonial .triangle{
-  width: 50rem;
-  height: 50rem;
+.testimonial .triangle {
+  width: 100%;
+  height: 100%;
 }
 
-.pentagon--mask{
+.pentagon--mask {
   mask-image: url(../images/pentagon_css_mask.png);
   -webkit-mask-image: url(../images/pentagon_css_mask.png);
-  
+
   -webkit-mask-position: top left;
   mask-position: top left;
 
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 
-  -webkit-mask-size:contain;
-  mask-size:contain;
-  
+  -webkit-mask-size: contain;
+  mask-size: contain;
+
   mask-position: center;
   -webkit-mask-position: center;
 
-  max-height: fit-content;
-  max-width: max-content;
-
+  /* max-height: fit-content; */
+  /* max-width: max-content; */
 }
 .testimonial .pentagon--container {
-
   display: flex;
   justify-content: center;
-  width: 33rem;
-  height: 33rem;
-  position:relative;
-  top: -385px;
-  right: 40px;
+  width: 33vw;
+  height: 33vw;
+  position: relative;
+  /* top: -385px;
+  right: 100px; */
+  top: -38.5vw;
+  right: 10vw;
 }
 
-.qoute--container{
+.qoute--container {
   padding: 1.5rem 3rem;
   border-radius: var(--border-radius);
   background-color: #fff;
-  height: 300px;
-}
-
-.qoute--container{
   flex-direction: column;
-  justify-content: space-between;
-
   display: flex;
+  margin: auto 7%;
 }
 
-.qoute--container .user{
+.qoute--container .user {
   white-space: nowrap;
   display: flex;
   justify-content: space-between;
   margin: 0;
+  margin-bottom: 1.5rem;
+}
+.qoute--container .user svg {
+  fill: var(--color-primary);
+  display: flex;
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 766px) {
+  .testimonial {
+    gap: 8rem;
+  }
+
+  .testimonial__image {
+    width: 72vw;
+    height: 72vw;
+  }
+  .testimonial .pentagon--container {
+    width: 47vw;
+    height: 47vw;
+    top: -55.5vw;
+    right: 15vw;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .qoute--container .user {
+    flex-direction: column;
+    direction: ltr;
+    white-space: normal;
+  }
+}
+/* testimonial end */
+
+/* grid start */
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 1024px) {
+  .gird--1x3 {
+    grid-template-rows: repeat(3,1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 
-/* testimonial end */
-
+/* grid end */
