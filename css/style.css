@@ -446,6 +446,12 @@ a.btn {
   font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+  .media .media__title {
+    font-size: 2.8rem;
+  }
+}
+
 /* media end */
 
 /* qoute start */
@@ -614,14 +620,11 @@ a.btn {
   transition: 0.5s;
 }
 
-
-
 @media screen and (min-width: 768px) {
   .swiper {
     width: 42vw;
     height: auto;
     margin: auto;
-    
   }
 }
 
@@ -830,10 +833,10 @@ a.btn {
   }
 
   .callout .callout__contant {
-  height: 400px;
+    height: 400px;
     order: unset;
     margin-right: unset;
-    margin : 0 2rem;
+    margin: 0 2rem;
   }
 
   .callout .grid--1x2 {
@@ -846,11 +849,10 @@ a.btn {
 }
 
 @media screen and (max-width: 450px) {
-
   .callout h2 {
     font-size: 2.8rem;
   }
-  .callout img{
+  .callout img {
     position: relative;
     right: unset;
     height: 90vw;
@@ -860,24 +862,26 @@ a.btn {
 
 /* callout end */
 
-
 /* block--services start */
 
-.block--services{
+.block--services {
   padding-bottom: 9rem;
 }
 
-.block--services .title{
+.block--services .title {
+  max-width: 80%;
   text-align: center;
-  margin-bottom: 9rem;
+  margin: auto;
+  margin-bottom: 4.5rem;
+  margin-top: 4.5rem;
 }
 
-.block--services .grid{
+.block--services .grid {
   row-gap: 30px;
   /* grid-template-columns: 1fr 1fr; */
 }
 
-.block--services .media{
+.block--services .media {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -887,20 +891,60 @@ a.btn {
 }
 
 @media screen and (min-width: 768px) {
-  .block--services .grid{
-    grid-template-columns: repeat(2,1fr);
+  .block--services .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .block--services .media{
+  .block--services .media {
     text-align: right;
     display: unset;
+    /* margin-left: 2rem; */
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .block--services .grid{
-    grid-template-columns: repeat(3,1fr);
+  .block--services .grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-
 /* block--services end */
+
+/* collapsible start */
+
+.collapsible__header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading{
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible__chevron{
+  transform: rotate(90deg);
+  transition-duration: .3s;
+}
+
+.collapsible__content{
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.collapsible--expanded .collapsible__chevron{
+  transform: rotate(0);
+}
+.collapsible--expanded .collapsible__content{
+  display: block;
+  max-height: 100vh;
+  opacity: 1;
+  transition: all .3s;
+}
+
+.collapsible__chevron{
+  fill: red;
+}
+/* collapsible end */
+
