@@ -23,9 +23,8 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  
 }
-*::selection{
+*::selection {
   color: #fff;
   background-color: rgb(0, 84, 241);
 }
@@ -601,7 +600,7 @@ a.btn {
 
 /* grid end */
 
-/* swaper start */
+/* swiper-testimonials start */
 
 .swiper {
   width: 78vw;
@@ -638,7 +637,54 @@ a.btn {
   }
 }
 
-/* swaper end */
+/* swiper-testimonials end */
+
+/* swiper-doctor start */
+
+.doctors .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.doctors .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.doctors .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* my codes on swiper-doctor */
+
+.doctors .swiper-slide-duplicate,.swiper-slide-active{
+  opacity: .5;
+}
+.doctors .swiper-slide-next{
+  opacity: 1;
+}
+
+/* my codes on swiper-doctor */
+
+/* swiper-doctor end */
 
 /* dr--card start */
 
@@ -1041,7 +1087,7 @@ a.btn {
   transition: 0.3s;
 }
 
-.nav .nav__item:last-child{
+.nav .nav__item:last-child {
   border: none;
 }
 
@@ -1135,7 +1181,7 @@ a.btn {
   border-left: unset;
 }
 
-.static:last-child{
+.static:last-child {
   border: unset;
 }
 
@@ -1155,19 +1201,18 @@ a.btn {
   grid-template-columns: 1fr;
 }
 
-
 @media screen and (min-width: 768px) {
   .statics.grid--1x3 {
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .statics .static {
     border-bottom: unset;
     border-left: 2px solid var(--color-border);
   }
-  .static:last-child{
+  .static:last-child {
     border: unset;
   }
-  
+
   .statics .static {
     /* margin-top: 3.5rem;
     padding-bottom: 4rem; */
@@ -1180,11 +1225,11 @@ a.btn {
 
 /* qa start */
 
-.qa{
+.qa {
   max-width: 768px;
 }
 
-.qa .collapsible__heading{
+.qa .collapsible__heading {
   margin: 0;
   padding: 1rem 0;
   font-size: 1.8rem;
@@ -1192,19 +1237,19 @@ a.btn {
   font-weight: 600;
 }
 
-.qa .collapsible--expanded .collapsible__header{
+.qa .collapsible--expanded .collapsible__header {
   border-bottom: 1px solid var(--color-border);
 }
 
-.qa .collapsible--expanded .collapsible__content{
+.qa .collapsible--expanded .collapsible__content {
   margin: 2rem 0;
 }
 
-.qa .collapsible__chevron{
+.qa .collapsible__chevron {
   fill: var(--color-secondary);
 }
 
-.qa .qa--collapsible{
+.qa .qa--collapsible {
   background: #fff;
   border-radius: 5px;
   padding: 1rem;

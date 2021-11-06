@@ -1,0 +1,42 @@
+
+    <!-- Swiper -->
+    <section class="section doctors">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"></div>
+          <img class="swiper-slide" src="./images/blog-image.png" alt="">
+          <img class="swiper-slide" src="./images/blog-image.png" alt="">
+          <img class="swiper-slide" src="./images/blog-image.png" alt="">
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- TODO: we need to separate script forom this doc -->
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        watchSlidesVisibility: true,
+        slidesPerGroup: 1,
+        
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      swiper.activeIndex=0;
+
+    </script>
