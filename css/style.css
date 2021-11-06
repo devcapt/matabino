@@ -104,7 +104,7 @@ h3 {
 /* section start */
 
 .section {
-  max-width: 1024px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -988,6 +988,7 @@ a.btn {
 
 .nav .logo {
   height: 68px;
+
 }
 
 .nav .icon {
@@ -1001,7 +1002,7 @@ a.btn {
 }
 
 .nav__item {
-  padding: 0.75rem 2rem;
+  padding: 1.25rem 2rem;
   border-bottom: 1px solid var(--color-border);
   margin: 0;
 }
@@ -1022,6 +1023,7 @@ a.btn {
   border-radius: 3px;
   transition: 0.3s;
   cursor: pointer;
+  margin-right: 1rem;
 }
 .nav .btn{
   display: none;
@@ -1065,3 +1067,40 @@ a.btn {
 }
 
 /* nav end */
+
+
+/* Hero start */
+
+.hero .hero__image-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hero .block__heading{
+  font-size: 36px;
+}
+
+.hero .hero__image{
+  width: 100%;
+}
+
+.hero__content{
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.hero__content .btn{
+  width: fit-content;
+  padding: 1.5rem 3rem;
+}
+
+@media screen and (min-width:1024px) {
+  .hero .block__heading{
+    font-size: 48px;
+  }
+}
+
+/* Hero end */
