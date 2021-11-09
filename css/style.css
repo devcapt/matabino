@@ -1364,3 +1364,28 @@ a.btn {
 /* my codes on swiper-doctor */
 
 /* swiper-doctor end */
+
+/* section--title start */
+
+.section--title{
+  padding: 3rem;
+  position: relative;
+  width: fit-content;
+  height: 200px;
+  margin: auto;
+}
+.section--title img{
+  width: 16rem;
+  position: relative;
+  top: -120px;
+  left: 60px;
+  z-index: -1;
+}
+
+@media screen and (max-width:480px) {
+  .section--title img{
+   display: none;
+  }
+}
+
+/* section--title end */
