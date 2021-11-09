@@ -644,6 +644,7 @@ a.btn {
 .doctors .swiper {
   width: 100%;
   height: 100%;
+  padding: 0 4rem;
 }
 
 .doctors .swiper-slide {
@@ -664,13 +665,6 @@ a.btn {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-}
-
-.doctors .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 /* my codes on swiper-doctor */
@@ -719,6 +713,8 @@ a.btn {
 }
 
 /* dr--card end */
+
+
 
 /* map--container start */
 
@@ -1257,3 +1253,115 @@ a.btn {
 }
 
 /* qa end */
+
+/* doctors--container start */
+
+.doctors--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.dr--card_container {
+  padding: 1.75rem;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 3.2rem;
+}
+
+.dr--card_container .dr__image {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  height: fit-content;
+  object-fit: cover;
+}
+
+.dr--card_container .dr__name {
+  text-align: right;
+  color: var(--color-body);
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+}
+.dr--card_container .dr__title {
+  text-align: right;
+  color: var(--color-body);
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .doctors--container {
+    flex-direction: row;
+  }
+  .dr--card_container {
+    margin: 2.2rem 4.4rem 2.2rem 4.4rem;
+    padding: 3.4rem;
+    object-fit: cover;
+    margin: 0;
+  }
+  .dr--card_container .dr__image {
+    object-fit: cover;
+    height: fit-content;
+  }
+}
+
+/* doctors--container end */
+
+/* swiper-doctor start */
+
+
+
+.doctors .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* my codes on swiper-doctor */
+
+.doctors .swiper-slide {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.doctors .swiper-button-prev {
+  display: none;
+}
+.doctors .swiper-button-next {
+  display: none;
+}
+.doctors .swiper-b-prev {
+
+  transform: rotate(-90deg);
+}
+.doctors .swiper-b-next {
+
+  transform: rotate(90deg);
+}
+
+.dr--navigation {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.dr--navigation{
+  fill: var(--color-secondary);
+  opacity: .8;
+}
+.dr--navigation .swiper-b-next,.swiper-b-prev{
+  opacity: .7;
+  transition: .2s;
+}
+.dr--navigation .swiper-b-next:hover,.swiper-b-prev:hover{
+  opacity: 1;
+}
+
+/* my codes on swiper-doctor */
+
+/* swiper-doctor end */
+

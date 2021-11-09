@@ -1,42 +1,103 @@
-
-    <!-- Swiper -->
-    <section class="section doctors">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"></div>
-          <img class="swiper-slide" src="./images/blog-image.png" alt="">
-          <img class="swiper-slide" src="./images/blog-image.png" alt="">
-          <img class="swiper-slide" src="./images/blog-image.png" alt="">
+<body>
+  <section class="section doctors">
+    <div class="swiper dr--swiper">
+      <div class="swiper-wrapper doctor--container">
+        <div class="swiper-slide">
+          <div class="dr--card_container">
+            <div class="dr--card_header">
+              <img src="./images/doctor-hero.png" alt="" class="dr__image" />
+            </div>
+            <div class="dr--card_content">
+              <p class="dr__name">دکتر انوشیروان</p>
+              <p class="dr__title">متخصص پرتز های دندانی</p>
+            </div>
+          </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-slide">
+          <div class="dr--card_container">
+            <div class="dr--card_header">
+              <img src="./images/doctor-hero.png" alt="" class="dr__image" />
+            </div>
+            <div class="dr--card_content">
+              <p class="dr__name">دکتر انوشیروان</p>
+              <p class="dr__title">متخصص پرتز های دندانی</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="dr--card_container">
+            <div class="dr--card_header">
+              <img src="./images/doctor-hero.png" alt="" class="dr__image" />
+            </div>
+            <div class="dr--card_content">
+              <p class="dr__name">دکتر انوشیروان</p>
+              <p class="dr__title">متخصص پرتز های دندانی</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="dr--card_container">
+            <div class="dr--card_header">
+              <img src="./images/doctor-hero.png" alt="" class="dr__image" />
+            </div>
+            <div class="dr--card_content">
+              <p class="dr__name">دکتر انوشیروان</p>
+              <p class="dr__title">متخصص پرتز های دندانی</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+    <div class="dr--navigation">
+      <div class="swiper-b-next">
+        <svg class="icon">
+          <use xlink:href="./images/sprite.svg#Chevron"></use>
+        </svg>
+      </div>
+      <div class="swiper-b-prev">
+        <svg class="icon">
+          <use xlink:href="./images/sprite.svg#Chevron"></use>
+        </svg>
+      </div>
+    </div>
+  </section>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
 
-    <!-- TODO: we need to separate script forom this doc -->
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        watchSlidesVisibility: true,
-        slidesPerGroup: 1,
-        
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-      swiper.activeIndex=0;
-
-    </script>
+<!-- TODO: we need to separate script forom this doc -->
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper(".dr--swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  watchSlidesVisibility: true,
+  slidesPerGroup: 1,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  navigation: {
+    nextEl: ".swiper-b-next",
+    prevEl: ".swiper-b-prev",
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    120: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
+});
+swiper.activeIndex = 0;
+</script>
