@@ -112,6 +112,10 @@ h3 {
   margin: 0 auto;
 }
 
+.section.space-sec{
+  margin: 8rem auto;
+}
+
 /* section end */
 
 /* Links start */
@@ -966,6 +970,7 @@ a.btn {
 .collapsible__header {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .collapsible__heading {
@@ -1138,6 +1143,7 @@ a.btn {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-right: 3.2rem;
 }
 
 .hero__content .btn {
@@ -1159,6 +1165,7 @@ a.btn {
   background: var(--color-primary);
   border-radius: 24px;
   margin: 3.2rem;
+  margin-top: 0;
   padding: 1rem;
 }
 
@@ -1375,10 +1382,10 @@ a.btn {
   margin: auto;
 }
 .section--title img{
-  width: 16rem;
+  width: 14rem;
   position: relative;
-  top: -120px;
-  left: 60px;
+  top: -110px;
+  left: 50px;
   z-index: -1;
 }
 
