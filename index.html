@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- CDN -->
+    <!-- CDNs -->
     <!-- Swiper JS -->
     <link
       rel="stylesheet"
@@ -17,7 +17,320 @@
   </head>
 
   <body>
+    <nav class="nav--row">
+      <nav class="nav collapsible collapsible--expanded section">
+        <a href="/"><img class="logo" src="/images/logo.png" alt="" /></a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="./images/sprite.svg#hamburger"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">خانه</a></li>
+          <li class="nav__item"><a href="#">درباره ما</a></li>
+          <li class="nav__item"><a href="#">خدمات</a></li>
+          <li class="nav__item"><a href="#">پزشکان</a></li>
+        </ul>
+        <button class="btn btn--secondary">ارتباط با ما</button>
+      </nav>
+    </nav>
+    
+    <!-- SECTION HERO -->
+    <section class="hero section block--dark">
+      <div class="grid grid--1x2">
+        <div class="hero__content">
+          <h1 class="block__heading">
+            ما بهترین را برای سلامت دهان و دندان شما رقم میزنیم
+          </h1>
+          <p>
+            پزشکان با باتجربه ما سابقه انجام خدمات متوعی برای مراجعین را دارا
+            هستند و با جدید ترین متد ها سعی بر حل مشکلات شما میکنند
+          </p>
+          <button class="btn btn--secondary">رزرو ملاقات</button>
+        </div>
+        <div class="hero__image-container">
+          <img class="hero__image" src="./images/doctor-hero.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <div class="statistics section">
+      <div class="statics grid grid--1x3">
+        <div class="static">
+          <p class="static__number">۵</p>
+          <p class="static__title">سال تجربه</p>
+        </div>
+        <div class="static">
+          <p class="static__number">۳۰۰۰</p>
+          <p class="static__title">رضایت مشتری</p>
+        </div>
+        <div class="static">
+          <p class="static__number">۲۰</p>
+          <p class="static__title">مراجعه کننده در روز</p>
+        </div>
+      </div>
+    </div>
+    <!-- SECTION HERO -->
 
+    <div class="section">
+      <div class="testimonial grid grid--1x2">
+        <div class="testimonial__image">
+          <svg class="triangle">
+            <use xlink:href="images/svg_shap.svg#testimonial_triangle"></use>
+          </svg>
+          <div class="pentagon--container">
+            <img class="pentagon--mask" src="./images/Avatar.png" alt="" />
+          </div>
+        </div>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="qoute--container">
+                <p class="qoute__text">
+                  یک کلینیک برزو و با تجربه با برخوردی گرم و دوستانه که همیشه به
+                  همه دوستان و اطرافیانم پیشنهاد کردم و میکنم
+                </p>
+                <div class="user">
+                  <div>
+                    <img src="./images/Avatar.png" alt="" class="avatar" />
+                    <div>
+                      <p class="user__name">دکتر مرتضی صبیحی</p>
+                    </div>
+                  </div>
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#quote"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="qoute--container">
+                <p class="qoute__text">
+                  یک کلینیک برزو و با تجربه با برخوردی گرم و دوستانه که همیشه به
+                  همه دوستان و اطرافیانم پیشنهاد کردم و میکنم
+                </p>
+                <div class="user">
+                  <div>
+                    <img src="./images/Avatar.png" alt="" class="avatar" />
+                    <div>
+                      <p class="user__name">دکتر مرتضی صبیحی</p>
+                    </div>
+                  </div>
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#quote"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="qoute--container">
+                <p class="qoute__text">
+                  یک کلینیک برزو و با تجربه با برخوردی گرم و دوستانه که همیشه به
+                  همه دوستان و اطرافیانم پیشنهاد کردم و میکنم
+                </p>
+                <div class="user">
+                  <div>
+                    <img src="./images/Avatar.png" alt="" class="avatar" />
+                    <div>
+                      <p class="user__name">دکتر مرتضی صبیحی</p>
+                    </div>
+                  </div>
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#quote"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- SECTION SERVICES  -->
+    <div class="block--services section">
+      <h3 class="title">خدمات با کیفیت برای شما و کسانی که ایمان آوردند</h3>
+      <div class="grid grid--1x">
+        <div class="media">
+          <div class="media__image">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#heart"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <div class="media__title">خدمات ترمیمی</div>
+            <div class="media__description">
+              ما از بروز ترین روش ها بهترین مواد اولیه جهت ترمیم دندان ها
+              استفاده میکنیم
+            </div>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media__image">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#heart"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <div class="media__title">خدمات ترمیمی</div>
+            <div class="media__description">
+              ما از بروز ترین روش ها بهترین مواد اولیه جهت ترمیم دندان ها
+              استفاده میکنیم
+            </div>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media__image">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#heart"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <div class="media__title">خدمات ترمیمی</div>
+            <div class="media__description">
+              ما از بروز ترین روش ها بهترین مواد اولیه جهت ترمیم دندان ها
+              استفاده میکنیم
+            </div>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media__image">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#heart"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <div class="media__title">خدمات ترمیمی</div>
+            <div class="media__description">
+              ما از بروز ترین روش ها بهترین مواد اولیه جهت ترمیم دندان ها
+              استفاده میکنیم
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION SERVICES  -->
+
+    <!-- SECTION DOCTORS  -->
+    <section class="section doctors">
+      <div class="section--title">
+        <h2 class="title">با پزشکان باتجربه ما آشنا شوید</h2>
+        <img src="./images/title_blob.png" alt="" />
+      </div>
+      <div class="swiper dr--swiper">
+        <div class="swiper-wrapper doctor--container">
+          <div class="swiper-slide">
+            <div class="dr--card_container">
+              <div class="dr--card_header">
+                <img src="./images/doctor-hero.png" alt="" class="dr__image" />
+              </div>
+              <div class="dr--card_content">
+                <p class="dr__name">دکتر انوشیروان</p>
+                <p class="dr__title">متخصص پرتز های دندانی</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dr--card_container">
+              <div class="dr--card_header">
+                <img src="./images/doctor-hero.png" alt="" class="dr__image" />
+              </div>
+              <div class="dr--card_content">
+                <p class="dr__name">دکتر انوشیروان</p>
+                <p class="dr__title">متخصص پرتز های دندانی</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dr--card_container">
+              <div class="dr--card_header">
+                <img src="./images/doctor-hero.png" alt="" class="dr__image" />
+              </div>
+              <div class="dr--card_content">
+                <p class="dr__name">دکتر انوشیروان</p>
+                <p class="dr__title">متخصص پرتز های دندانی</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dr--card_container">
+              <div class="dr--card_header">
+                <img src="./images/doctor-hero.png" alt="" class="dr__image" />
+              </div>
+              <div class="dr--card_content">
+                <p class="dr__name">دکتر انوشیروان</p>
+                <p class="dr__title">متخصص پرتز های دندانی</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dr--navigation">
+        <div class="swiper-b-next">
+          <svg class="icon">
+            <use xlink:href="./images/sprite.svg#Chevron"></use>
+          </svg>
+        </div>
+        <div class="swiper-b-prev">
+          <svg class="icon">
+            <use xlink:href="./images/sprite.svg#Chevron"></use>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION DOCTORS  -->
+
+    <!-- SECTION Q&A -->
+    <div class="qa section space-sec">
+      <div class="section--title">
+        <h2 class="title">سوالات معمول شما</h2>
+        <img src="./images/title_blob.png" alt="" />
+      </div>
+      <div class="collapsible qa--collapsible collapsible--expanded">
+        <div class="collapsible__header">
+          <p class="collapsible__heading">ساعات کاری مطب چگونه هست؟</p>
+          <svg class="icon collapsible__chevron">
+            <use xlink:href="./images/sprite.svg#arrow"></use>
+          </svg>
+        </div>
+        <div class="collapsible__content">
+          درمانگاه همیشه بازه حتی شبا البته با تغییر کاربری...
+        </div>
+        <div class="collapsible__line"></div>
+      </div>
+
+      <div class="collapsible qa--collapsible">
+        <div class="collapsible__header">
+          <p class="collapsible__heading">ساعات کاری مطب چگونه هست؟</p>
+          <svg class="icon collapsible__chevron">
+            <use xlink:href="./images/sprite.svg#arrow"></use>
+          </svg>
+        </div>
+        <div class="collapsible__content">
+          درمانگاه همیشه بازه حتی شبا البته با تغییر کاربری...
+        </div>
+        <div class="collapsible__line"></div>
+      </div>
+
+      <div class="collapsible qa--collapsible">
+        <div class="collapsible__header">
+          <p class="collapsible__heading">ساعات کاری مطب چگونه هست؟</p>
+          <svg class="icon collapsible__chevron">
+            <use xlink:href="./images/sprite.svg#arrow"></use>
+          </svg>
+        </div>
+        <div class="collapsible__content">
+          درمانگاه همیشه بازه حتی شبا البته با تغییر کاربری...
+        </div>
+        <div class="collapsible__line"></div>
+      </div>
+    </div>
+    <!-- SECTION Q&A -->
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/swiper.js"></script>
+    <script src="./scripts/collapsible.js"></script>
+    <script src="./scripts/dr-swiper.js"></script>
   </body>
-
 </html>
