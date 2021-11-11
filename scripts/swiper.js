@@ -1,5 +1,5 @@
 // Swiper js
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".qouteSwiper", {
   effect: "cards",
   grabCursor: true,
   autoplay: {
