@@ -11,5 +11,11 @@ var swiper = new Swiper(".qouteSwiper", {
     el: '.swiper-pagination',
     type: 'bullets',
   },
+  780:{
+    pagination:{
+      el: '.swiper-pagination',
+      type: 'bullets',
+    }
+  }
 });
 // Swiper js
