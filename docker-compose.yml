@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  app:
+    stdin_open: true
+    build:
+      context: .
+    container_name: "doctor-landing"
+    ports:
+      - "3003:80"
