@@ -36,6 +36,7 @@
 body {
   background-color: var(--color-lite);
   direction: rtl;
+  overflow-x: hidden;
 }
 
 /* General end */
@@ -491,6 +492,8 @@ a.btn {
   background-color: #fff;
   flex-direction: column;
   display: flex;
+  margin: auto;
+  -webkit-margin-collapse:auto;
 }
 
 .qoute--container .user {
@@ -618,12 +621,15 @@ a.btn {
 /* swiper-testimonials start */
 
 .qouteSwiper{
-
   margin: auto;
 }
 
+.testimonial .swiper-wrapper {
+  margin: auto;
+  position: relative;
+}
 .testimonial .swiper {
-  /* width: 78vw; */
+  width: 100%;
   max-width: 40rem;
   height: auto;
   margin: auto;
@@ -641,6 +647,7 @@ a.btn {
   width: 200px;
   opacity: 0.5;
   transition: 0.5s;
+  margin: 0 auto;
 }
 .testimonial .swiper-slide-shadow {
   visibility: hidden;
@@ -1140,6 +1147,12 @@ a.btn {
     color: var(--color-body);
     font-size: 1.8rem;
   }
+  .nav__item a:hover{
+    transition: .2s;
+    color: var(--color-secondary);
+    font-weight: 500;
+    text-shadow: var(--color-secondary) 0 0 1.2px;
+  }
 }
 
 /* nav end */
@@ -1171,6 +1184,9 @@ a.btn {
 .hero__content .btn {
   width: fit-content;
   padding: 1.5rem 3rem;
+  line-height: 1.6;
+  margin: 0;
+  margin-left: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
